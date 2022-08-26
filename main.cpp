@@ -9,7 +9,7 @@ float MatrixOperation(float *A, int n, int m, int recursionIndex) {
 		indexes[i] = 0;
 	}
 	indexes[0] = 1; //this fix the first index to 1  A(1,i)*A(i,m)
-                     //                                 ^ 
+	                //                                 ^ 
 	indexes[recursionIndex-1] = m;
 					 
 	for (int c=0; c<(n-2)^recursionIndex; ++c) { //iterate for all combination of indexes
